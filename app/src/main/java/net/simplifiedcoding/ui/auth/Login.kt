@@ -28,7 +28,8 @@ import net.simplifiedcoding.ui.theme.spacing
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun LoginScreen(navController: NavController) {
+fun LoginScreen(navController: NavController,
+                viewModel: AuthViewModel = ) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
 
